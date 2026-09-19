@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bipar · Caixa do pequeno comércio</title>
+    <meta
+      name="description"
+      content="Bipar: vendas com leitor de código de barras, fiado, estoque, caixa e contas a pagar para mercearias, frutarias e padarias."
+    />
+    <link rel="icon" href="/bipar/icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Manrope:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="/assets/site.css" />
+    <style>
+      body {
+        --accent: #00a357;
+        --bg-glow: rgba(0, 163, 87, 0.14);
+      }
+      .lime {
+        background: linear-gradient(transparent 62%, rgba(197, 242, 58, 0.75) 62%);
+        padding: 0 0.08em;
+      }
+      @media (prefers-color-scheme: dark) {
+        .lime {
+          background: linear-gradient(transparent 62%, rgba(197, 242, 58, 0.32) 62%);
+        }
+      }
+      .feature svg {
+        width: 22px;
+        height: 22px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site-header">
+        <a class="brand" href="/"><span class="brand-mark">MA</span> Matheus Araujo</a>
+        <nav class="nav">
+          <a href="/#apps">Apps</a>
+          <a href="/bipar/privacidade.html">Privacidade</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="app-hero">
+          <img class="app-icon" src="/bipar/icon.svg" alt="Ícone do Bipar" width="88" height="88" />
+          <div>
+            <div class="tags">
+              <span class="tag status">Em teste fechado</span>
+              <span class="tag">Android</span>
+            </div>
+            <h1 style="margin-top: 16px">O caixa do seu comércio, <span class="lime">no celular.</span></h1>
+            <p>
+              Para mercearias, frutarias e padarias: venda bipando o código de barras com a câmera, anote o fiado e
+              feche o caixa sabendo exatamente onde está cada real.
+            </p>
+            <div class="actions">
+              <a class="button primary" aria-disabled="true">Google Play · em breve</a>
+              <a class="button" href="mailto:matheus.dev3000@gmail.com?subject=Quero%20testar%20o%20Bipar">Quero testar</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="features" aria-label="Funcionalidades">
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M3 5v14M7 5v14M11 5v14M15 5v14M18 5v14M21 5v14" /></svg></span>
+            <h3>Venda bipando</h3>
+            <p>A câmera lê código de barras e etiqueta de balança sem parar, direto na venda.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M4 4h12a4 4 0 0 1 4 4v12H8a4 4 0 0 1-4-4z" /><path d="M8 9h8M8 13h5" /></svg></span>
+            <h3>Fiado organizado</h3>
+            <p>Caderneta por cliente, com limite, saldo e recebimento em qualquer forma de pagamento.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2" /><path d="M3 10h18M16 15h2" /></svg></span>
+            <h3>Caixa que bate</h3>
+            <p>Abertura, sangria, suprimento e fechamento conferido, com cada correção registrada.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5z" /><path d="m3 8 9 5 9-5M12 13v8" /></svg></span>
+            <h3>Estoque em dia</h3>
+            <p>Entrada de mercadoria, contagem e perdas, com histórico de cada movimento.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z" /><path d="M9 8h6M9 12h6" /></svg></span>
+            <h3>Contas a pagar</h3>
+            <p>Fornecedores, aluguel e despesas com vencimento, pagos até do próprio caixa.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" /></svg></span>
+            <h3>Relatórios</h3>
+            <p>Faturamento, lucro, mais vendidos e o resultado do mês, sem planilha.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1" /><rect x="14" y="4" width="6" height="6" rx="1" /><rect x="4" y="14" width="6" height="6" rx="1" /><path d="M14 14h2v2h-2zM18 18h2v2h-2zM14 18h2M18 14h2" /></svg></span>
+            <h3>Pix na hora</h3>
+            <p>QR Code com o valor da venda gerado no aparelho, com a chave do próprio comércio.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M2 8.5a15 15 0 0 1 20 0M5 12a10 10 0 0 1 14 0M8.5 15.5a5 5 0 0 1 7 0" /><circle cx="12" cy="19" r="1" /></svg></span>
+            <h3>Internet caiu?</h3>
+            <p>As vendas ficam guardadas no aparelho e são enviadas quando a conexão volta.</p>
+          </article>
+        </section>
+
+        <div class="links-row">
+          <a href="/bipar/privacidade.html">Política de privacidade</a>
+          <a href="/bipar/excluir-conta.html">Excluir sua conta</a>
+          <a href="mailto:matheus.dev3000@gmail.com">Suporte</a>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <span>Bipar · por <a href="/">Matheus Araujo</a></span>
+        <span><a href="mailto:matheus.dev3000@gmail.com">matheus.dev3000@gmail.com</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
