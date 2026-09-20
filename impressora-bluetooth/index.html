@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Impressora Térmica Bluetooth · Imprima texto e QR Code</title>
+    <meta
+      name="description"
+      content="Aplicativo Android para imprimir texto e QR Code em impressoras térmicas ESC/POS por Bluetooth. Sem cadastro, sem conta."
+    />
+    <link rel="icon" href="/impressora-bluetooth/icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Manrope:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="/assets/site.css" />
+    <style>
+      body {
+        --accent: #2563eb;
+        --bg-glow: rgba(37, 99, 235, 0.14);
+      }
+      .mark {
+        background: linear-gradient(transparent 62%, rgba(96, 165, 250, 0.75) 62%);
+        padding: 0 0.08em;
+      }
+      @media (prefers-color-scheme: dark) {
+        .mark {
+          background: linear-gradient(transparent 62%, rgba(96, 165, 250, 0.32) 62%);
+        }
+      }
+      .feature svg {
+        width: 22px;
+        height: 22px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site-header">
+        <a class="brand" href="/"><span class="brand-mark">MA</span> Matheus Araujo</a>
+        <nav class="nav">
+          <a href="/#apps">Apps</a>
+          <a href="/impressora-bluetooth/privacidade.html">Privacidade</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="app-hero">
+          <img
+            class="app-icon"
+            src="/impressora-bluetooth/icon.svg"
+            alt="Ícone do Impressora Térmica Bluetooth"
+            width="88"
+            height="88"
+          />
+          <div>
+            <div class="tags">
+              <span class="tag status">Na Google Play</span>
+              <span class="tag">Android</span>
+            </div>
+            <h1 style="margin-top: 16px">Sua impressora térmica, <span class="mark">direto do celular.</span></h1>
+            <p>
+              Conecte a impressora ESC/POS por Bluetooth, digite o texto e imprima. Dá para imprimir como QR Code
+              também. Sem cadastro, sem login e sem nada guardado no aparelho.
+            </p>
+            <div class="actions">
+              <a
+                class="button primary"
+                href="https://play.google.com/store/apps/details?id=br.com.bitdevs.printer"
+                >Ver na Google Play</a
+              >
+              <a class="button" href="mailto:matheus.dev3000@gmail.com?subject=Impressora%20T%C3%A9rmica%20Bluetooth"
+                >Suporte</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="features" aria-label="Funcionalidades">
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M7 8V3h10v5" /><path d="M7 19H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" /><path d="M7 15h10v6H7z" /></svg></span>
+            <h3>Imprima o que digitar</h3>
+            <p>Escreva o texto na tela e mande para a impressora, sem formulário nem modelo fixo.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1" /><rect x="14" y="4" width="6" height="6" rx="1" /><rect x="4" y="14" width="6" height="6" rx="1" /><path d="M14 14h2v2h-2zM18 18h2v2h-2zM14 18h2M18 14h2" /></svg></span>
+            <h3>Ou como QR Code</h3>
+            <p>Um toque transforma o mesmo texto em QR Code, gerado no próprio aparelho.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="m7 7 10 10-5 5V2l5 5L7 17" /></svg></span>
+            <h3>Impressoras ESC/POS</h3>
+            <p>Funciona com as impressoras térmicas Bluetooth de 58 mm e 80 mm que falam ESC/POS.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2" /><path d="M6 6v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6" /><path d="M10 11v6M14 11v6" /></svg></span>
+            <h3>Limpa depois de imprimir</h3>
+            <p>Opcional: o campo fica em branco a cada impressão, pronto para a próxima etiqueta.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18" /></svg></span>
+            <h3>Português e inglês</h3>
+            <p>A interface acompanha o idioma do aparelho, em pt-BR ou em inglês.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></svg></span>
+            <h3>Sem conta, sem servidor</h3>
+            <p>Não pede cadastro nem localização. O texto não sai do aparelho: não temos servidor.</p>
+          </article>
+        </section>
+
+        <div class="links-row">
+          <a href="/impressora-bluetooth/privacidade.html">Política de privacidade</a>
+          <a href="mailto:matheus.dev3000@gmail.com">Suporte</a>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <span>Impressora Térmica Bluetooth · por <a href="/">Matheus Araujo</a></span>
+        <span><a href="mailto:matheus.dev3000@gmail.com">matheus.dev3000@gmail.com</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
