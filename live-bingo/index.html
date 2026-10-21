@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Live Bingo · Acompanhe todas as suas cartelas</title>
+    <meta
+      name="description"
+      content="Aplicativo Android para acompanhar várias cartelas de bingo ao mesmo tempo: leia a cartela pela câmera, marque os números sorteados e receba o aviso de BINGO!"
+    />
+    <link rel="icon" href="/live-bingo/icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Manrope:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="/assets/site.css" />
+    <style>
+      body {
+        --accent: #2c5364;
+        --bg-glow: rgba(44, 83, 100, 0.14);
+      }
+      .mark {
+        background: linear-gradient(transparent 62%, rgba(255, 181, 71, 0.75) 62%);
+        padding: 0 0.08em;
+      }
+      @media (prefers-color-scheme: dark) {
+        .mark {
+          background: linear-gradient(transparent 62%, rgba(255, 181, 71, 0.32) 62%);
+        }
+      }
+      .feature svg {
+        width: 22px;
+        height: 22px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site-header">
+        <a class="brand" href="/"><span class="brand-mark">MA</span> Matheus Araujo</a>
+        <nav class="nav">
+          <a href="/#apps">Apps</a>
+          <a href="/live-bingo/privacidade.html">Privacidade</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="app-hero">
+          <img
+            class="app-icon"
+            src="/live-bingo/icon.svg"
+            alt="Ícone do Live Bingo"
+            width="88"
+            height="88"
+          />
+          <div>
+            <div class="tags">
+              <span class="tag status">Na Google Play</span>
+              <span class="tag">Android</span>
+            </div>
+            <h1 style="margin-top: 16px">Todas as suas cartelas, <span class="mark">marcadas de uma vez.</span></h1>
+            <p>
+              Para quem joga bingo presencial ou em lives com várias cartelas. Cadastre as cartelas, digite cada número
+              sorteado e o app marca em todas e avisa quando alguma faz BINGO. Funciona offline.
+            </p>
+            <div class="actions">
+              <a
+                class="button primary"
+                href="https://play.google.com/store/apps/details?id=br.com.bitdevs.livebingo"
+                >Ver na Google Play</a
+              >
+              <a class="button" href="mailto:matheus.dev3000@gmail.com?subject=Live%20Bingo">Suporte</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="features" aria-label="Funcionalidades">
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="7" rx="1" /><rect x="3" y="14" width="7" height="7" rx="1" /><rect x="14" y="14" width="7" height="7" rx="1" /></svg></span>
+            <h3>Várias cartelas juntas</h3>
+            <p>Digite o número sorteado uma vez só e ele é marcado em todas as cartelas cadastradas.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2" /><circle cx="12" cy="12" r="3" /></svg></span>
+            <h3>Leitura pela câmera</h3>
+            <p>Aponte a câmera para a cartela e os 24 números são lidos e preenchidos para você conferir.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" /><circle cx="9" cy="9" r="2" /><path d="m21 15-5-5L5 21" /></svg></span>
+            <h3>Ou por uma foto</h3>
+            <p>Recebeu a cartela como imagem? Escolha da galeria, recorte e o app lê os números do mesmo jeito.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4" /><path d="M7 4h10v5a5 5 0 0 1-10 0z" /><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3" /></svg></span>
+            <h3>Do seu jeito de ganhar</h3>
+            <p>Escolha o critério de vitória: cartela cheia, linha vertical, horizontal ou qualquer uma das duas.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" /><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" /></svg></span>
+            <h3>Aviso de BINGO!</h3>
+            <p>Quando uma cartela completa o critério, ela ganha o selo BINGO! e chega uma notificação.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></svg></span>
+            <h3>Offline e sem conta</h3>
+            <p>Não pede cadastro. Cartelas e números ficam guardados só no seu aparelho.</p>
+          </article>
+        </section>
+
+        <div class="links-row">
+          <a href="/live-bingo/privacidade.html">Política de privacidade</a>
+          <a href="mailto:matheus.dev3000@gmail.com">Suporte</a>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <span>Live Bingo · por <a href="/">Matheus Araujo</a></span>
+        <span><a href="mailto:matheus.dev3000@gmail.com">matheus.dev3000@gmail.com</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
