@@ -9,6 +9,13 @@
       content="Aplicativo Android para acompanhar várias cartelas de bingo ao mesmo tempo: leia a cartela pela câmera, marque os números sorteados e receba o aviso de BINGO!"
     />
     <link rel="icon" href="/live-bingo/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/live-bingo/icon-512.png" />
+    <meta property="og:title" content="Live Bingo" />
+    <meta
+      property="og:description"
+      content="Acompanhe várias cartelas de bingo de uma vez: leia a cartela pela câmera, marque os números sorteados e receba o aviso de BINGO!"
+    />
+    <meta property="og:image" content="https://matheusaraujo-dev.github.io/live-bingo/icon-512.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,6 +45,41 @@
         stroke-width: 2;
         stroke-linecap: round;
         stroke-linejoin: round;
+      }
+      .shots {
+        display: flex;
+        gap: 16px;
+        margin: 0 0 48px;
+        padding: 4px 4px 16px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: thin;
+      }
+      .shots figure {
+        flex: 0 0 220px;
+        margin: 0;
+        scroll-snap-align: start;
+      }
+      .shots img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 9 / 20;
+        border-radius: 24px;
+        border: 1px solid var(--border);
+        background: #0f1a1f;
+        box-shadow: var(--shadow);
+      }
+      .shots figcaption {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-align: center;
+      }
+      @media (max-width: 560px) {
+        .shots figure {
+          flex-basis: 200px;
+        }
       }
     </style>
   </head>
@@ -79,6 +121,33 @@
               <a class="button" href="mailto:matheus.dev3000@gmail.com?subject=Live%20Bingo">Suporte</a>
             </div>
           </div>
+        </section>
+
+        <section class="shots" aria-label="Telas do app">
+          <figure>
+            <img src="/live-bingo/prints/01-cartelas.webp" width="540" height="1200" loading="lazy" alt="Tela principal com o campo do número sorteado, o painel de sorteados e as cartelas com os números marcados." />
+            <figcaption>Suas cartelas</figcaption>
+          </figure>
+          <figure>
+            <img src="/live-bingo/prints/02-bingo.webp" width="540" height="1200" loading="lazy" alt="Tela principal com uma cartela completa, destacada com o selo BINGO!." />
+            <figcaption>BINGO!</figcaption>
+          </figure>
+          <figure>
+            <img src="/live-bingo/prints/03-camera.webp" width="540" height="1200" loading="lazy" alt="Leitor da câmera enquadrando uma cartela, com a mini grade mostrando os números confirmados em verde." />
+            <figcaption>Leitura pela câmera</figcaption>
+          </figure>
+          <figure>
+            <img src="/live-bingo/prints/04-revisao.webp" width="540" height="1200" loading="lazy" alt="Revisão da leitura com todos os números confirmados e o botão Usar números." />
+            <figcaption>Conferir a leitura</figcaption>
+          </figure>
+          <figure>
+            <img src="/live-bingo/prints/05-nova-cartela.webp" width="540" height="1200" loading="lazy" alt="Tela Nova cartela com a grade 5×5 preenchida, o campo de nome e o botão Salvar cartela." />
+            <figcaption>Nova cartela</figcaption>
+          </figure>
+          <figure>
+            <img src="/live-bingo/prints/06-configuracoes.webp" width="540" height="1200" loading="lazy" alt="Tela de configurações com as opções de como se ganha: linha, coluna, linha ou coluna, e cartela cheia." />
+            <figcaption>Como se ganha</figcaption>
+          </figure>
         </section>
 
         <section class="features" aria-label="Funcionalidades">
