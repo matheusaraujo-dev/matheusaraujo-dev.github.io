@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Política de privacidade · Hold</title>
+    <link rel="icon" href="/hold/icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Manrope:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="/assets/site.css" />
+    <style>
+      body {
+        --accent: #0ca678;
+        --bg-glow: rgba(12, 166, 120, 0.14);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap narrow">
+      <header class="site-header">
+        <a class="brand" href="/"
+          ><span class="brand-mark">MA</span> Matheus Araujo</a
+        >
+        <nav class="nav"><a href="/#apps">Apps</a></nav>
+      </header>
+
+      <main class="doc">
+        <a class="back" href="/hold/">&larr; Hold</a>
+        <h1>Política de privacidade do Hold</h1>
+        <p class="updated">Última atualização: 14 de novembro de 2026</p>
+
+        <p>
+          O Hold é uma carteira de criptomoedas não custodial para Android,
+          desenvolvida por Matheus Araujo. "Não custodial" quer dizer que as
+          chaves da carteira são geradas e guardadas só no seu aparelho:
+          ninguém além de você, nem o desenvolvedor, tem acesso a elas ou aos
+          seus fundos. Esta política explica o que o aplicativo trata, para quê
+          e quais são os seus direitos, conforme a Lei Geral de Proteção de
+          Dados (Lei 13.709/2018).
+        </p>
+
+        <h2>Resumo</h2>
+        <p>
+          O Hold não tem cadastro, conta, e-mail, anúncios, analytics nem
+          relatórios de erro, e não existe servidor próprio do aplicativo. Ele
+          só se comunica com os serviços necessários para funcionar, listados
+          abaixo, e você pode trocar o principal deles (o nó RPC) por um de sua
+          escolha.
+        </p>
+
+        <h2>Frase de recuperação, chaves e PIN</h2>
+        <p>
+          A frase de recuperação, as chaves privadas e o PIN
+          <strong>nunca saem do aparelho</strong>. A frase e as chaves ficam em
+          um cofre cifrado com o seu PIN (PBKDF2-SHA512 e AES-256-GCM), guardado
+          no armazenamento seguro do Android (Android Keystore). Não existe
+          cópia em servidor: se você perder o aparelho sem ter anotado a frase
+          de recuperação, não há como recuperar a carteira.
+        </p>
+
+        <h2>Dados que o aplicativo guarda no aparelho</h2>
+        <ul>
+          <li>
+            <strong>Cofre cifrado:</strong> frase de recuperação e chaves
+            privadas importadas, protegidas pelo PIN e pelo Android Keystore.
+          </li>
+          <li>
+            <strong>Biometria:</strong> se você ativar, uma chave do cofre fica
+            no Keystore e só é liberada pela biometria do aparelho.
+          </li>
+          <li>
+            <strong>Configurações:</strong> rede ativa, nós RPC e redes que você
+            adicionar, contas e seus nomes, tema, idioma e demais preferências.
+          </li>
+          <li>
+            <strong>Tokens:</strong> os tokens que você adicionar ou ocultar.
+          </li>
+          <li>
+            <strong>Atividade e histórico:</strong> as transações enviadas pelo
+            aplicativo e as transferências lidas da rede para as suas contas
+            (endereços, valores, datas e dados técnicos da transação).
+          </li>
+          <li>
+            <strong>Navegador:</strong> os sites que você conectou à carteira,
+            os favoritos e o cache e os cookies dos próprios sites. O navegador
+            não guarda histórico de páginas visitadas.
+          </li>
+        </ul>
+        <p>
+          Esses dados ficam no armazenamento interno do aplicativo e não são
+          enviados para o desenvolvedor. A opção "Apagar carteira", nos ajustes,
+          remove tudo; desinstalar o aplicativo ou limpar os dados dele nas
+          configurações do Android também.
+        </p>
+
+        <h2>Conexões com a internet</h2>
+        <p>
+          Uma carteira precisa consultar a blockchain. Estes são os únicos
+          serviços com que o Hold se comunica, e o que cada um fica sabendo:
+        </p>
+        <ul>
+          <li>
+            <strong>Nó RPC da rede</strong> (padrão: PublicNode): usado para
+            ler saldos e histórico, estimar taxas e enviar transações. Recebe o
+            seu endereço IP, os endereços consultados e as transações assinadas
+            que você envia. Você pode usar um nó próprio em Ajustes → Redes e
+            RPC.
+          </li>
+          <li>
+            <strong>CoinGecko</strong>: só se você ativar "Cotações em moeda"
+            (vem desligado). Recebe o seu IP e quais moedas ou tokens são
+            cotados, nunca os seus endereços ou saldos.
+          </li>
+          <li>
+            <strong>KyberSwap</strong>: só quando você usa a tela Trocar, para
+            buscar a cotação e montar a transação de troca. Recebe o seu IP, o
+            seu endereço, a rede, os tokens e os valores da troca.
+          </li>
+          <li>
+            <strong>Sites que você abre no navegador interno</strong>: veem o
+            que qualquer navegador revela (IP, tipo de navegador, cookies do
+            próprio site). Um site só conhece o seu endereço se você aprovar a
+            conexão, e só para as contas que você escolher. Cookies de
+            terceiros ficam desativados.
+          </li>
+          <li>
+            <strong>DuckDuckGo</strong>: só quando você digita na barra do
+            navegador um texto que não é endereço de site; recebe o termo
+            buscado e o seu IP.
+          </li>
+          <li>
+            <strong>Exploradores de blocos</strong> (como o Etherscan): só
+            quando você toca em "Ver no explorador"; a página abre no navegador
+            do seu aparelho e o explorador recebe o seu IP e a transação ou o
+            contrato consultado.
+          </li>
+        </ul>
+        <p>
+          Transações enviadas para a blockchain são, por natureza, públicas e
+          permanentes: qualquer pessoa pode ver os endereços e os valores
+          envolvidos. Logos de tokens e de redes vêm embutidos no aplicativo e
+          nunca são baixados.
+        </p>
+
+        <h2>Câmera</h2>
+        <p>
+          A permissão de câmera serve só para ler QR codes: ao importar uma
+          carteira, no campo de destino da tela Enviar e ao adicionar um token.
+          Ela é pedida na hora do uso. A leitura é feita no próprio aparelho,
+          sem internet, e nenhuma imagem é gravada ou enviada.
+        </p>
+
+        <h2>Biometria</h2>
+        <p>
+          Se você ativar o desbloqueio por biometria, a verificação da
+          digital ou do rosto é feita pelo próprio Android. O aplicativo recebe
+          apenas a confirmação de que deu certo e nunca tem acesso aos seus
+          dados biométricos.
+        </p>
+
+        <h2>Capturas de tela</h2>
+        <p>
+          Por padrão, o aplicativo bloqueia capturas e gravações de tela e
+          esconde o conteúdo na lista de apps recentes. Nas telas da frase de
+          recuperação e do PIN esse bloqueio fica sempre ligado.
+        </p>
+
+        <h2>O que o aplicativo não faz</h2>
+        <ul>
+          <li>Não tem login, cadastro nem perfil de usuário.</li>
+          <li>
+            Não usa anúncios, analytics, relatórios de erro ou rastreamento
+            próprio.
+          </li>
+          <li>
+            Não usa microfone, localização, contatos nem arquivos do aparelho.
+          </li>
+          <li>
+            Não guarda, não vende e não compartilha dados com o desenvolvedor
+            ou com terceiros, além dos serviços listados acima, nos momentos
+            descritos.
+          </li>
+        </ul>
+
+        <h2>Crianças</h2>
+        <p>
+          O aplicativo é uma ferramenta financeira e não é direcionado a
+          crianças.
+        </p>
+
+        <h2>Seus direitos</h2>
+        <p>
+          Não guardamos nenhum dado pessoal seu em servidores nossos: tudo o que
+          o aplicativo mantém fica no seu aparelho, e você pode apagar tudo pela
+          opção "Apagar carteira" ou desinstalando o aplicativo. Os serviços de
+          terceiros citados acima seguem as próprias políticas de privacidade.
+          Para dúvidas ou qualquer solicitação, escreva para
+          <a href="mailto:matheus.dev3000@gmail.com"
+            >matheus.dev3000@gmail.com</a
+          >. Nunca vamos pedir a sua frase de recuperação, as suas chaves ou o
+          seu PIN.
+        </p>
+
+        <h2>Mudanças nesta política</h2>
+        <p>Quando esta política mudar, a data no topo é atualizada.</p>
+
+        <h2>Contato</h2>
+        <p>
+          Matheus Araujo ·
+          <a href="mailto:matheus.dev3000@gmail.com"
+            >matheus.dev3000@gmail.com</a
+          >
+        </p>
+      </main>
+
+      <footer class="site-footer">
+        <span>Hold · por <a href="/">Matheus Araujo</a></span>
+        <span><a href="/hold/">Página do app</a></span>
+      </footer>
+    </div>
+  </body>
+</html>

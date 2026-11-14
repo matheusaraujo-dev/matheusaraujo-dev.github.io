@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hold · Carteira cripto privada e segura</title>
+    <meta
+      name="description"
+      content="Carteira cripto não custodial para Android: suas chaves ficam só no seu aparelho. Sem conta, sem rastreamento, com navegador de dapps e redes EVM."
+    />
+    <link rel="icon" href="/hold/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/hold/icon-512.png" />
+    <meta property="og:title" content="Hold" />
+    <meta
+      property="og:description"
+      content="Carteira cripto não custodial: suas chaves ficam só no seu aparelho. Sem conta e sem rastreamento."
+    />
+    <meta property="og:image" content="https://matheusaraujo-dev.github.io/hold/icon-512.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Manrope:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="/assets/site.css" />
+    <style>
+      body {
+        --accent: #0ca678;
+        --bg-glow: rgba(12, 166, 120, 0.14);
+      }
+      .mark {
+        background: linear-gradient(transparent 62%, rgba(21, 170, 191, 0.4) 62%);
+        padding: 0 0.08em;
+      }
+      @media (prefers-color-scheme: dark) {
+        .mark {
+          background: linear-gradient(transparent 62%, rgba(21, 170, 191, 0.32) 62%);
+        }
+      }
+      .feature svg {
+        width: 22px;
+        height: 22px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .shots {
+        display: flex;
+        gap: 16px;
+        margin: 0 0 48px;
+        padding: 4px 4px 16px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: thin;
+      }
+      .shots figure {
+        flex: 0 0 220px;
+        margin: 0;
+        scroll-snap-align: start;
+      }
+      .shots img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 9 / 20;
+        border-radius: 24px;
+        border: 1px solid var(--border);
+        background: #0b0d12;
+        box-shadow: var(--shadow);
+      }
+      .shots figcaption {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-align: center;
+      }
+      @media (max-width: 560px) {
+        .shots figure {
+          flex-basis: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site-header">
+        <a class="brand" href="/"><span class="brand-mark">MA</span> Matheus Araujo</a>
+        <nav class="nav">
+          <a href="/#apps">Apps</a>
+          <a href="/hold/privacidade.html">Privacidade</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="app-hero">
+          <img class="app-icon" src="/hold/icon.svg" alt="Ícone do Hold" width="88" height="88" />
+          <div>
+            <div class="tags">
+              <span class="tag status">Na Google Play</span>
+              <span class="tag">Android</span>
+            </div>
+            <h1 style="margin-top: 16px">Sua carteira cripto, <span class="mark">só sua.</span></h1>
+            <p>
+              Uma carteira não custodial com só o essencial: ver saldos, enviar, receber, trocar tokens e usar dapps. As
+              chaves ficam no seu aparelho, sem conta e sem rastreamento.
+            </p>
+            <div class="actions">
+              <a class="button primary" href="https://play.google.com/store/apps/details?id=app.holdwallet.secure"
+                >Ver na Google Play</a
+              >
+              <a class="button" href="mailto:matheus.dev3000@gmail.com?subject=Hold">Suporte</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="shots" aria-label="Telas do app">
+          <figure>
+            <img src="/hold/prints/01-carteira.webp" width="540" height="1200" loading="lazy" alt="Tela da carteira na rede Polygon com o saldo estimado, os botões Enviar, Receber e Trocar e a lista de ativos POL, USDC e USDT." />
+            <figcaption>Sua carteira</figcaption>
+          </figure>
+          <figure>
+            <img src="/hold/prints/02-enviar.webp" width="540" height="1200" loading="lazy" alt="Revisão de um envio de 0,02 POL mostrando o destino, a rede, a taxa estimada e o total antes de confirmar." />
+            <figcaption>Conferir antes de enviar</figcaption>
+          </figure>
+          <figure>
+            <img src="/hold/prints/03-trocar.webp" width="540" height="1200" loading="lazy" alt="Tela Trocar com 0,05 POL para USDC, mostrando o valor recebido, o mínimo garantido e a tolerância de preço." />
+            <figcaption>Trocar tokens</figcaption>
+          </figure>
+          <figure>
+            <img src="/hold/prints/04-navegador.webp" width="540" height="1200" loading="lazy" alt="Navegador de dapps com a barra de endereço e os destaques Polymarket, Uniswap e Chainlink." />
+            <figcaption>Navegador de dapps</figcaption>
+          </figure>
+          <figure>
+            <img src="/hold/prints/05-ajustes.webp" width="540" height="1200" loading="lazy" alt="Tela de ajustes com contas, redes e RPC, tokens ocultos, sites conectados, segurança e privacidade." />
+            <figcaption>Ajustes e privacidade</figcaption>
+          </figure>
+          <figure>
+            <img src="/hold/prints/06-idiomas.webp" width="540" height="1200" loading="lazy" alt="Seletor de idioma com português, inglês, espanhol, francês, alemão, russo, chinês, hindi e bengali." />
+            <figcaption>9 idiomas</figcaption>
+          </figure>
+        </section>
+
+        <section class="features" aria-label="Funcionalidades">
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></svg></span>
+            <h3>Chaves só no aparelho</h3>
+            <p>A frase de recuperação fica num cofre cifrado pelo seu PIN, dentro do armazenamento seguro do Android.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" /><path d="M3 3l18 18" /></svg></span>
+            <h3>Sem conta, sem rastreio</h3>
+            <p>Nada de cadastro, e-mail, anúncios ou analytics. O app não tem servidor próprio.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" /><circle cx="5" cy="5" r="2" /><circle cx="19" cy="5" r="2" /><circle cx="5" cy="19" r="2" /><circle cx="19" cy="19" r="2" /><path d="M6.5 6.5 10 10M17.5 6.5 14 10M6.5 17.5 10 14M17.5 17.5 14 14" /></svg></span>
+            <h3>Redes EVM</h3>
+            <p>Ethereum, Arbitrum, Base, Optimism, Polygon e BNB Smart Chain, com a opção de usar o seu próprio nó RPC.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" /></svg></span>
+            <h3>Navegador de dapps</h3>
+            <p>Conecte só os sites e as contas que você aprovar, com alertas contra os golpes mais comuns.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M7 4 3 8l4 4M3 8h14M17 20l4-4-4-4M21 16H7" /></svg></span>
+            <h3>Trocar tokens</h3>
+            <p>Faça trocas direto no app, com a transação conferida antes de você assinar.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg></span>
+            <h3>PIN ou biometria</h3>
+            <p>Confirmação a cada transação, bloqueio automático e capturas de tela bloqueadas.</p>
+          </article>
+        </section>
+
+        <div class="links-row">
+          <a href="/hold/privacidade.html">Política de privacidade</a>
+          <a href="mailto:matheus.dev3000@gmail.com">Suporte</a>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <span>Hold · por <a href="/">Matheus Araujo</a></span>
+        <span><a href="mailto:matheus.dev3000@gmail.com">matheus.dev3000@gmail.com</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
