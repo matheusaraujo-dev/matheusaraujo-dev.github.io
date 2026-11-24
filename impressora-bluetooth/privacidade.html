@@ -37,7 +37,6 @@
           >&larr; Impressora Térmica Bluetooth</a
         >
         <h1>Política de privacidade do Impressora Térmica Bluetooth</h1>
-        <p class="updated">Última atualização: 24 de setembro de 2026</p>
 
         <p>
           O Impressora Térmica Bluetooth é um aplicativo Android que imprime
@@ -50,27 +49,46 @@
         <h2>Resumo</h2>
         <p>
           O aplicativo não tem cadastro, não cria conta e não envia para lugar
-          nenhum o texto que você imprime. Só há duas situações em que dados
-          saem do aparelho: o serviço de anúncios do Google e o formulário de
-          sugestões e pedidos, que só envia algo quando você mesmo escreve e
-          toca em enviar. As duas estão descritas abaixo.
+          nenhum o texto que você imprime. Só há três situações em que dados
+          saem do aparelho: o serviço de anúncios do Google, a compra do
+          Premium pela Google Play e o formulário de sugestões e pedidos, que
+          só envia algo quando você mesmo escreve e toca em enviar. As três
+          estão descritas abaixo.
         </p>
 
         <h2>Dados que o aplicativo trata</h2>
         <ul>
           <li>
-            <strong>O texto que você digita:</strong> fica apenas na memória do
-            aparelho enquanto o aplicativo está aberto, o tempo necessário para
-            enviá-lo à impressora. Nada é salvo e nada é transmitido pela
-            internet.
+            <strong>O que você monta para imprimir:</strong> o documento em
+            edição (rascunho), os modelos que você salvar, o histórico das
+            últimas impressões e o contador de numeração ficam gravados só no
+            armazenamento interno do aplicativo, para você não perder o trabalho
+            ao fechar o app. Nada disso é transmitido pela internet.
+          </li>
+          <li>
+            <strong>Imagens:</strong> quando você adiciona uma imagem, ela é
+            escolhida pelo seletor de fotos do próprio Android, que dá acesso só
+            à foto escolhida, sem permissão para a galeria inteira. Uma cópia
+            reduzida fica no armazenamento interno do aplicativo e não é
+            enviada a lugar nenhum.
           </li>
           <li>
             <strong>Impressoras pareadas:</strong> o nome e o endereço das
             impressoras Bluetooth já pareadas no seu Android são lidos para
-            montar a lista de escolha. Essa informação também não é gravada nem
-            enviada.
+            montar a lista de escolha. Só a impressora que você escolher fica
+            gravada no aparelho, para ser lembrada na próxima vez; nada é
+            enviado.
+          </li>
+          <li>
+            <strong>Preferências:</strong> largura do papel, idioma e demais
+            ajustes ficam gravados no aparelho.
           </li>
         </ul>
+        <p>
+          Tudo isso é apagado ao desinstalar o aplicativo ou limpar os dados
+          dele nas configurações do Android. O aplicativo não faz backup desses
+          dados na nuvem.
+        </p>
         <p>
           O QR Code é gerado dentro do próprio aparelho, sem consultar nenhum
           serviço externo.
@@ -86,7 +104,8 @@
 
         <h2>Anúncios (Google AdMob)</h2>
         <p>
-          O aplicativo exibe um banner de anúncios do Google AdMob. Para
+          Na versão gratuita, o aplicativo exibe anúncios do Google AdMob (um
+          banner e, de vez em quando, um anúncio de tela cheia). Para
           veicular e medir esses anúncios, o Google pode tratar o identificador
           de publicidade do aparelho (Advertising ID), informações do
           dispositivo e dados de exibição dos anúncios. Antes de carregar
@@ -100,9 +119,23 @@
           >.
         </p>
 
+        <h2>Premium (compras pela Google Play)</h2>
+        <p>
+          O Premium remove os anúncios e é vendido como assinatura ou compra
+          única. O pagamento é feito inteiramente pela Google Play: nós não
+          recebemos nem vemos seus dados de pagamento, nome ou e-mail. O
+          aplicativo só consulta a Google Play para saber se há uma compra
+          ativa e guarda essa informação no aparelho. Assinaturas são
+          gerenciadas e canceladas na própria Google Play. O tratamento desses
+          dados segue a
+          <a href="https://policies.google.com/privacy"
+            >Política de Privacidade do Google</a
+          >.
+        </p>
+
         <h2>Sugestões e pedidos</h2>
         <p>
-          O aplicativo tem um formulário opcional, aberto pelo ícone de lâmpada
+          O aplicativo tem um formulário opcional, aberto pelo ícone de conversa
           no topo da tela, para você enviar sugestões, relatar problemas ou
           pedir algo sob medida. Nada é enviado se você não usar o formulário.
           Quando você toca em enviar, são transmitidos:
@@ -114,18 +147,20 @@
           </li>
           <li>
             <strong>Contato, se você informar:</strong> e-mail ou WhatsApp. O
-            campo é opcional; sem ele não temos como responder e a mensagem
-            chega sem nenhuma forma de contato.
+            campo é opcional: sem ele, a resposta chega só dentro do próprio
+            aplicativo (veja abaixo).
           </li>
           <li>
             <strong>Dados técnicos do aparelho:</strong> idioma, marca e modelo,
-            versão do Android e largura de papel configurada.
+            versão do Android, versão do aplicativo e largura de papel
+            configurada.
           </li>
           <li>
             <strong>Dados de rede:</strong> o endereço IP de onde a mensagem
             partiu. O aplicativo
             <strong>não acessa o GPS nem a localização do aparelho</strong>: a
-            região é estimada a partir do IP.
+            cidade aproximada e a operadora de internet são estimadas pela
+            Cloudflare a partir do IP.
           </li>
         </ul>
         <p>
@@ -145,6 +180,20 @@
           mensagem.
         </p>
         <p>
+          <strong>Respostas dentro do aplicativo:</strong> cada mensagem enviada
+          abre uma conversa identificada por um código aleatório, criado na hora
+          e sem ligação com o seu nome, conta ou aparelho. Esse código e as
+          respostas do desenvolvedor ficam guardados na Cloudflare por
+          7 dias depois da última mensagem e então são apagados
+          automaticamente. Enquanto a conversa está aberta, o aplicativo envia
+          esse código ao nosso serviço de tempos em tempos (ao ser aberto) para
+          saber se chegou resposta; nenhum outro dado vai junto além do
+          endereço IP da conexão, usado só para limitar o número de consultas.
+          Se você responder de volta, a réplica segue o mesmo caminho da
+          primeira mensagem. O histórico das conversas fica gravado no próprio
+          aparelho e é apagado ao desinstalar o aplicativo.
+        </p>
+        <p>
           <strong>Base legal:</strong> o seu consentimento, dado ao escrever e
           enviar a mensagem, e o nosso legítimo interesse em prevenir abuso do
           formulário (art. 7º, I e IX, da LGPD).
@@ -152,22 +201,24 @@
 
         <h2>Internet</h2>
         <p>
-          A permissão de acesso à internet é usada para carregar os anúncios e
-          para enviar o formulário de sugestões, quando você o utiliza. A
+          A permissão de acesso à internet é usada para carregar os anúncios,
+          para falar com a Google Play no caso do Premium e para o formulário de
+          sugestões (envio e consulta de respostas), quando você o utiliza. A
           impressão em si funciona sem conexão.
         </p>
 
         <h2>O que o aplicativo não faz</h2>
         <ul>
           <li>
-            Não usa câmera, microfone, GPS/localização do aparelho, contatos nem
-            arquivos.
+            Não usa câmera, microfone, GPS/localização do aparelho nem
+            contatos, e não acessa seus arquivos ou sua galeria além da imagem
+            que você mesmo escolher.
           </li>
           <li>Não tem login, cadastro nem perfil de usuário.</li>
           <li>Não usa analytics, rastreamento próprio ou relatórios de uso.</li>
           <li>
-            Não vende dados e não os compartilha com terceiros, além do serviço
-            de anúncios acima.
+            Não vende dados e não os compartilha com terceiros, além dos
+            serviços do Google descritos acima.
           </li>
           <li>Não faz backup dos dados do aplicativo na nuvem.</li>
         </ul>
@@ -185,9 +236,11 @@
           mantinha no aparelho. Se você enviou uma mensagem, pode pedir a
           qualquer momento para confirmar, acessar, corrigir ou excluir o que
           recebemos; como não há cadastro, informe a data aproximada do envio e,
-          se tiver incluído, o contato usado, para localizarmos a mensagem.
-          Pedidos relativos aos dados tratados pelo serviço de anúncios devem
-          ser dirigidos ao Google. Para dúvidas ou qualquer solicitação, escreva
+          se tiver incluído, o contato usado, para localizarmos a mensagem. Você
+          também pode fazer esse pedido respondendo na própria conversa, em
+          "Minhas mensagens", enquanto ela estiver aberta. Pedidos relativos aos
+          dados tratados pelos serviços de anúncios e de pagamento devem ser
+          dirigidos ao Google. Para dúvidas ou qualquer solicitação, escreva
           para
           <a href="mailto:matheus.dev3000@gmail.com"
             >matheus.dev3000@gmail.com</a
@@ -195,7 +248,7 @@
         </p>
 
         <h2>Mudanças nesta política</h2>
-        <p>Quando esta política mudar, a data no topo é atualizada.</p>
+        <p>Quando esta política mudar, esta página é atualizada.</p>
 
         <h2>Contato</h2>
         <p>
