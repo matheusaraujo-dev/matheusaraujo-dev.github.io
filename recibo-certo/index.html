@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Recibo Certo: recibos, orçamentos, ordens de serviço e recibos de aluguel em PDF, com Pix e valor por extenso. Sem cadastro, dados no celular." />
+    <title>Recibo Certo · Recibo, orçamento e OS em PDF</title>
+    <meta
+      name="description"
+      content="Carteira cripto não custodial para Android: suas chaves ficam só no seu aparelho. Sem conta, sem rastreamento, com navegador de dapps e redes EVM."
+    />
+    <link rel="icon" href="/recibo-certo/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/hold/icon-512.png" />
+    <meta property="og:title" content="Hold" />
+    <meta
+      property="og:description"
+      content="Carteira cripto não custodial: suas chaves ficam só no seu aparelho. Sem conta e sem rastreamento."
+    />
+    <meta property="og:image" content="https://matheusaraujo-dev.github.io/hold/icon-512.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Manrope:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="/assets/site.css" />
+    <style>
+      body {
+        --accent: #c4450d;
+        --bg-glow: rgba(196, 69, 13, 0.14);
+      }
+      .mark {
+        background: linear-gradient(transparent 62%, rgba(255, 212, 59, 0.55) 62%);
+        padding: 0 0.08em;
+      }
+      @media (prefers-color-scheme: dark) {
+        .mark {
+          background: linear-gradient(transparent 62%, rgba(255, 212, 59, 0.3) 62%);
+        }
+      }
+      .feature svg {
+        width: 22px;
+        height: 22px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .shots {
+        display: flex;
+        gap: 16px;
+        margin: 0 0 48px;
+        padding: 4px 4px 16px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: thin;
+      }
+      .shots figure {
+        flex: 0 0 220px;
+        margin: 0;
+        scroll-snap-align: start;
+      }
+      .shots img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 540 / 1150;
+        border-radius: 24px;
+        border: 1px solid var(--border);
+        background: #0b0d12;
+        box-shadow: var(--shadow);
+      }
+      .shots figcaption {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-align: center;
+      }
+      @media (max-width: 560px) {
+        .shots figure {
+          flex-basis: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site-header">
+        <a class="brand" href="/"><span class="brand-mark">MA</span> Matheus Araujo</a>
+        <nav class="nav">
+          <a href="/#apps">Apps</a>
+          <a href="/recibo-certo/privacidade.html">Privacidade</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="app-hero">
+          <img class="app-icon" src="/recibo-certo/icon.svg" alt="Ícone do Recibo Certo" width="88" height="88" />
+          <div>
+            <div class="tags">
+              <span class="tag">Em breve na Google Play</span>
+              <span class="tag">Android</span>
+            </div>
+            <h1 style="margin-top: 16px">Recibo, orçamento e OS <span class="mark">em segundos.</span></h1>
+            <p>
+              Faça recibos, orçamentos, ordens de serviço e recibos de aluguel em PDF pelo celular, com valor por
+              extenso, Pix e assinatura, e envie ao cliente no WhatsApp. Sem cadastro e sem internet.
+            </p>
+            <div class="actions">
+              <a class="button primary" href="mailto:contato@bitdevs.cloud?subject=Recibo%20Certo">Fale com a gente</a>
+              <a class="button" href="/recibo-certo/privacidade.html">Privacidade</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="shots" aria-label="Telas do app">
+          <figure>
+            <img src="/recibo-certo/prints/01-recibo.webp" width="540" height="1150" loading="lazy" alt="Recibo nº 11 em PDF, pago em parte, com valor por extenso, QR Code Pix do restante, assinatura e o botão de enviar ao cliente." />
+            <figcaption>Recibo pronto para enviar</figcaption>
+          </figure>
+          <figure>
+            <img src="/recibo-certo/prints/02-editor.webp" width="540" height="1150" loading="lazy" alt="Editor do recibo com o cliente, itens com quantidade e valor unitário, atalhos do catálogo e o total por extenso." />
+            <figcaption>Editor rápido</figcaption>
+          </figure>
+          <figure>
+            <img src="/recibo-certo/prints/03-documentos.webp" width="540" height="1150" loading="lazy" alt="Lista de documentos de novembro com busca, filtros por tipo e situação e etiquetas de pago e a receber." />
+            <figcaption>Todos os documentos</figcaption>
+          </figure>
+          <figure>
+            <img src="/recibo-certo/prints/04-orcamento.webp" width="540" height="1150" loading="lazy" alt="Orçamento em PDF com validade, entrada e restante, QR Code Pix e o botão para gerar o recibo quando for aprovado." />
+            <figcaption>Orçamento que vira recibo</figcaption>
+          </figure>
+          <figure>
+            <img src="/recibo-certo/prints/05-os.webp" width="540" height="1150" loading="lazy" alt="Ordem de serviço com equipamento, defeito, serviço feito, checklist, peças, Pix e linhas de assinatura." />
+            <figcaption>Ordem de serviço</figcaption>
+          </figure>
+          <figure>
+            <img src="/recibo-certo/prints/06-aluguel.webp" width="540" height="1150" loading="lazy" alt="Recibo de aluguel de apartamento com período, vencimento, aluguel, condomínio e IPTU e valor por extenso." />
+            <figcaption>Recibo de aluguel</figcaption>
+          </figure>
+          <figure>
+            <img src="/recibo-certo/prints/07-inicio.webp" width="540" height="1150" loading="lazy" alt="Tela inicial com atalhos para os quatro documentos e o recebido e o a receber do mês." />
+            <figcaption>Resumo do mês</figcaption>
+          </figure>
+          <figure>
+            <img src="/recibo-certo/prints/08-backup.webp" width="540" height="1150" loading="lazy" alt="Tela de backup com o backup automático semanal ativado e os botões para salvar, enviar e restaurar." />
+            <figcaption>Backup automático</figcaption>
+          </figure>
+        </section>
+
+        <section class="features" aria-label="Funcionalidades">
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2z" /><path d="M9 7h6M9 11h6M9 15h3" /></svg></span>
+            <h3>Documento correto</h3>
+            <p>Valor por extenso automático, CPF ou CNPJ, local, data e assinatura desenhada na tela, nos quatro tipos de documento.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" /><rect x="3" y="14" width="7" height="7" /><path d="M14 14h3v3h-3zM18 18h3v3h-3z" /></svg></span>
+            <h3>Pix no documento</h3>
+            <p>QR Code e "copia e cola" com o valor total ou só o que falta receber.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M22 2 11 13" /><path d="M22 2 15 22l-4-9-9-4z" /></svg></span>
+            <h3>Enviar ao cliente</h3>
+            <p>O PDF vai direto para a conversa do cliente no WhatsApp, ou para qualquer outro app, ou para a impressora.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg></span>
+            <h3>Sem cadastro</h3>
+            <p>Abre e emite sem login. Os documentos e os dados dos clientes ficam no seu celular.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7L21 8" /><path d="M21 3v5h-5" /></svg></span>
+            <h3>Nada se perde</h3>
+            <p>Salvamento automático enquanto você digita, lixeira de 30 dias e backup semanal na pasta que você escolher.</p>
+          </article>
+          <article class="feature">
+            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z" /></svg></span>
+            <h3>Para quem trabalha</h3>
+            <p>Eletricistas, encanadores, técnicos, oficinas, MEIs e quem aluga imóveis.</p>
+          </article>
+        </section>
+
+        <div class="links-row">
+          <a href="/recibo-certo/privacidade.html">Política de privacidade</a>
+          <a href="mailto:contato@bitdevs.cloud">Suporte</a>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <span>Recibo Certo · por <a href="/">Matheus Araujo</a></span>
+        <span><a href="mailto:contato@bitdevs.cloud">contato@bitdevs.cloud</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
